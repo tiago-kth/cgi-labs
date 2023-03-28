@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include/SDL2 -I/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/glm -I/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/SDL2Auxiliary -O2 -Wall -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/DH2323SkeletonSDL2.dir/SkeletonSDL2.cpp.o -c /Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/SkeletonSDL2.cpp",
+  "file": "/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/SkeletonSDL2.cpp",
+  "output": "CMakeFiles/DH2323SkeletonSDL2.dir/SkeletonSDL2.cpp.o"
+},
+{
+  "directory": "/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include/SDL2 -I/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/glm -I/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/SDL2Auxiliary -O2 -Wall -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/DH2323SkeletonSDL2.dir/SDL2Auxiliary/SDL2Auxiliary.cpp.o -c /Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/SDL2Auxiliary/SDL2Auxiliary.cpp",
+  "file": "/Users/tiago/Documents/GitHub/cgi-labs/DH2323Lab1-vscode/SDL2Auxiliary/SDL2Auxiliary.cpp",
+  "output": "CMakeFiles/DH2323SkeletonSDL2.dir/SDL2Auxiliary/SDL2Auxiliary.cpp.o"
+}
+]

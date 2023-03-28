@@ -1,0 +1,4 @@
+# ninja log v5
+0	301	1679923439932691426	CMakeFiles/DH2323SkeletonSDL2.dir/SkeletonSDL2.cpp.o	a8ed7dd64cff19d8
+1	312	1679923439944282478	CMakeFiles/DH2323SkeletonSDL2.dir/SDL2Auxiliary/SDL2Auxiliary.cpp.o	cae1dae0265fc439
+312	424	1679923440057071955	DH2323SkeletonSDL2	b318b8aa9fb84d6d
