@@ -23,7 +23,7 @@ const int SCREEN_HEIGHT = 480;
 SDL2Aux *sdlAux;
 vector<glm::vec3> stars( 1000 );
 int t;
-float speed = 0.001;
+float speed = 0.0005;
 
 int control = 0;
 
@@ -84,14 +84,15 @@ int main(int argc, char* argv[])
 
     // for task 3
 
+    //cout << 0.2f;
     // initialize positions
-    for (int i = 0; i < stars.size(); i++) {
+    for (auto & star : stars) {
 
         // x and y between -1 and +1
-        stars[i].x = 2 * ( float(rand()) / float(RAND_MAX) - 0.5 );
-        stars[i].y = 2 * ( float(rand()) / float(RAND_MAX) - 0.5 );
+        star.x = 2 * ( float(rand()) / float(RAND_MAX) - 0.5 );
+        star.y = 2 * ( float(rand()) / float(RAND_MAX) - 0.5 );
         // z between 0 and 1;
-        stars[i].z = float(rand()) / float(RAND_MAX);
+        star.z = float(rand()) / float(RAND_MAX);
 
     }
 
@@ -123,11 +124,13 @@ void Draw_task3()
         float u = f * stars[i].x / stars[i].z + x0;
         float v = -f * stars[i].y / stars[i].z + y0;
 
+        glm::vec3 color = 0.4f * glm::vec3(1,1,1) / (stars[i].z * stars[i].z);
+
         /*if (i == 45) {
             cout << '\n' << stars[i].x << ' , ' << stars[i].z;
         }*/
 
-        sdlAux->putPixel(u, v, glm::vec3(1,1,1));
+        sdlAux->putPixel(u, v, color);
 
     }
 
