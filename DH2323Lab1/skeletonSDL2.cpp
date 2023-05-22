@@ -78,14 +78,15 @@ int main(int argc, char* argv[])
     while (!sdlAux->quitEvent()) {
         Draw_task2();
     }
-    sdlAux->saveBMP("screenshot.bmp");
+    sdlAux->saveBMP("screenshot2.bmp");
     return 0;
-     */
+    */
 
     // for task 3
 
     //cout << 0.2f;
     // initialize positions
+
     for (auto & star : stars) {
 
         // x and y between -1 and +1
@@ -106,7 +107,7 @@ int main(int argc, char* argv[])
         Update();
         Draw_task3();
     }
-    sdlAux->saveBMP("screenshot.bmp");
+    sdlAux->saveBMP("screenshot3.bmp");
     return 0;
 
 }
@@ -120,12 +121,14 @@ void Draw_task3()
     float x0 = SCREEN_WIDTH / 2;
     float y0 = SCREEN_HEIGHT / 2;
 
+    float aspect_ratio = SCREEN_WIDTH/SCREEN_HEIGHT;
+
     for (int i = 0; i < stars.size(); i++) {
         float u = f * stars[i].x / stars[i].z + x0;
         float v = -f * stars[i].y / stars[i].z + y0;
 
-        glm::vec3 color = 0.4f * glm::vec3(1,1,1) / (stars[i].z * stars[i].z);
-
+        glm::vec3 color = .4f * glm::vec3(1,1,1) / (stars[i].z * stars[i].z);
+        //glm::vec3 color = glm::vec3(1,1,1);
         /*if (i == 45) {
             cout << '\n' << stars[i].x << ' , ' << stars[i].z;
         }*/
